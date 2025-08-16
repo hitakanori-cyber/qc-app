@@ -1,9 +1,8 @@
 async function loadQuestions() {
   const category = document.getElementById("categorySelect").value;
   const response = await fetch(`data/${category}.json`);
-  const data = await response.json();
+  const data = await response.json(); // ← 1回だけ！
 
-  // JSON構造に応じて questions を取得
   const questions = Array.isArray(data) ? data : data.questions;
 
   const container = document.getElementById("questionContainer");

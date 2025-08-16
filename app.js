@@ -1,7 +1,10 @@
 async function loadQuestions() {
   const category = document.getElementById("categorySelect").value;
   const response = await fetch(`data/${category}.json`);
-  const questions = await response.json();
+  const data = await response.json();
+
+  // パターン判定：dataが配列ならそのまま、オブジェクトなら中のquestionsを使う
+  const questions = Array.isArray(data) ? data : data.questions;
 
   const container = document.getElementById("questionContainer");
   container.innerHTML = "";
@@ -10,15 +13,19 @@ async function loadQuestions() {
     const div = document.createElement("div");
     div.className = "question";
 
+    // text or question に対応
     const title = document.createElement("h3");
-    title.textContent = `Q${index + 1}: ${q.text}`;
+    title.textContent = `Q${index + 1}: ${q.text || q.question}`;
     div.appendChild(title);
 
-    q.choices.forEach((choice, i) => {
+    // choices or options に対応
+    const choices = q.choices || q.options;
+    choices.forEach((choice, i) => {
       const btn = document.createElement("button");
       btn.textContent = choice;
       btn.onclick = () => {
-        alert(i === q.correctIndex ? "正解！" : "不正解");
+        const correctIndex = q.correctIndex ?? q.answer;
+        alert(i === correctIndex ? "正解！" : "不正解");
         const exp = document.createElement("p");
         exp.textContent = `【解説】${q.explanation}`;
         div.appendChild(exp);

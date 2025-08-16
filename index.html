@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <title>QC検定3級 問題集</title>
   <link rel="stylesheet" href="style.css">
+<script>
+  fetch("data/assurance.json")
+    .then(response => response.json())
+    .then(data => {
+      document.body.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+    })
+    .catch(error => {
+      document.body.innerHTML = `<p>読み込みエラー: ${error}</p>`;
+    });
+</script>
+
 </head>
 <body>
   <h1>QC検定3級 問題集</h1>

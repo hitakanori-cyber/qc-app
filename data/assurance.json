@@ -178,10 +178,6 @@
       "answer": 0,
       "explanation": "アウトプットは、品質保証活動の結果として得られる製品やサービスなどの成果物。"
     },
-  {
-  "genre": "assurance",
-  "title": "品質保証と標準化",
-  "questions": [
     {
       "id": "assurance_016",
       "question": "品質保証活動において「インプット」とは何か？",

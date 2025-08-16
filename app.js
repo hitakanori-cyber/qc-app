@@ -3,7 +3,7 @@ async function loadQuestions() {
   const response = await fetch(`data/${category}.json`);
   const data = await response.json();
 
-  // パターン判定：dataが配列ならそのまま、オブジェクトなら中のquestionsを使う
+  // JSON構造に応じて questions を取得
   const questions = Array.isArray(data) ? data : data.questions;
 
   const container = document.getElementById("questionContainer");
@@ -13,12 +13,10 @@ async function loadQuestions() {
     const div = document.createElement("div");
     div.className = "question";
 
-    // text or question に対応
     const title = document.createElement("h3");
     title.textContent = `Q${index + 1}: ${q.text || q.question}`;
     div.appendChild(title);
 
-    // choices or options に対応
     const choices = q.choices || q.options;
     choices.forEach((choice, i) => {
       const btn = document.createElement("button");

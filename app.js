@@ -39,6 +39,7 @@ async function loadQuestions() {
       btn.style.display = "block";
       btn.style.margin = "6px 0";
       btn.style.width = "100%";
+      btn.className = "question-button";
 
       btn.onclick = () => {
         const correctIndex = q.correctIndex ?? q.answer;

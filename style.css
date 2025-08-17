@@ -13,7 +13,7 @@ h1 {
 }
 
 select, button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 9px 17px;
   margin: 10px 5px 10px 0;
 }
@@ -21,7 +21,7 @@ select, button {
 #scoreRate {
   font-weight: bold;
   margin: 12px 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .question {
@@ -29,7 +29,7 @@ select, button {
   padding: 15px;
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .question h3 {
@@ -58,5 +58,5 @@ select, button {
   padding: 15px;
   background-color: #f0f8ff;
   border-left: 8px solid #2196f3;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }

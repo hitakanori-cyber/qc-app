@@ -39,7 +39,6 @@ async function loadQuestions() {
       btn.style.display = "block";
       btn.style.margin = "6px 0";
       btn.style.width = "100%";
-      btn.style.fontSize = "1.8rem";
 
       btn.onclick = () => {
         const correctIndex = q.correctIndex ?? q.answer;

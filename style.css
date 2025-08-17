@@ -39,7 +39,7 @@ select, button {
 
 .question button {
   display: block;
-  width: 100%;
+  width: 120%;
   margin: 16px 0;
   padding: 20px;
   font-size: 7rem;

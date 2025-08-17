@@ -57,6 +57,6 @@ select, button {
   margin-top: 10px;
   padding: 20px;
   background-color: #f0f8ff;
-  border-left: 8px solid #2196f3;
+  border-left: 1px solid #2196f3;
   font-size: 1.35rem;
 }

@@ -42,10 +42,10 @@ select, button {
   width: 120%;
   margin: 16px 0;
   padding: 20px;
-  font-size: 7rem;
+  font-size: 12rem;
   background-color: #e0e0e0;
   border: none;
-  border-radius: 14px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -54,9 +54,9 @@ select, button {
 }
 
 .explanation {
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 25px;
   background-color: #f0f8ff;
   border-left: 12px solid #2196f3;
-  font-size: 1.55rem;
+  font-size: 1.95rem;
 }

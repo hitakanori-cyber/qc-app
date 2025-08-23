@@ -1,4 +1,5 @@
-[
+{ “genre”: “assurance”, “title”: “品質保証と標準化”, “questions”: [ 
+
   {
     "id": "assurance_001",
     "question": "品質保証の目的として最も適切なものはどれか？",

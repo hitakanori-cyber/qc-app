@@ -1,9 +1,9 @@
-{ 
+{
   “genre”: “assurance”, 
-  “title”: “品質保証と標準化”,
-  “questions”: [ 
-  {
-    "id": "assurance_001",
+  “title”: “品質保証と標準化”, 
+  “questions”: [
+    { 
+      “id”: “assurance_001”,
     "question": "品質保証の目的として最も適切なものはどれか？",
     "options": [
       "製品の原価低減と利益確保",
